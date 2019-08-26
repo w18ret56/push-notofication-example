@@ -1,8 +1,6 @@
 <?php
 $news = file("news.txt");
 $randIndex = array_rand($news);
-print "<br />===<br />";
-print $news[$randIndex];
-print "<br />===<br/>"
-
+$r = explode(";",$news[$randIndex]);
+print "TYTUL => ".$r[0]." TRESC => ".$r[1];
 ?>
