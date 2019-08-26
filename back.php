@@ -1,5 +1,7 @@
 <?php
 $news = file("news.txt");
 $randIndex = array_rand($news);
-print $news[$randIndex]
+$r = explode($news[$randIndex],";");
+print $r[0]."<br />";
+print $r[1];
 ?>
