@@ -1,4 +1,5 @@
 <?php
+header("Access-Control-Allow-Origin: *");
 $news = Array();
 $news[0]["title"] = "Burza nad Warszawą";
 $news[0]["content"] = "Wczoraj nad Warszawą rozpętała się straszna nawałnica";
