@@ -10,5 +10,6 @@ $news[3]["title"] = "Mały bohater";
 $news[3]["content"] = "13-letni Tymek z Krakowa uratował swoich rodziców dzwoniąc pod 112";
 $news[4]["title"] = "Problemy ze śmieciami";
 $news[4]["content"] = "Co 4 osoba w Polsce pali śmieciami";
-print json_encode($news);
+$o = $news[array_rand($news)];
+print json_encode($o);
 ?>
